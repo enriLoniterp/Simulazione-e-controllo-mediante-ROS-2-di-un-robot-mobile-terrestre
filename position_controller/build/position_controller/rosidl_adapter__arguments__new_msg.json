@@ -1,0 +1,6 @@
+{
+  "package_name": "position_controller",
+  "non_idl_tuples": [
+    "/home/enrico/turtlebot3_ws/src/position_controller:msg/Positiondef.msg"
+  ]
+}

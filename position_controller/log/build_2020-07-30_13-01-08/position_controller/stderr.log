@@ -1,0 +1,10 @@
+CMake Error at /opt/ros/eloquent/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:213 (add_custom_target):
+  add_custom_target cannot create target "position_controller" because
+  another target with the same name already exists.  The existing target is
+  an executable created in source directory
+  "/home/enrico/turtlebot3_ws/src/position_controller".  See documentation
+  for policy CMP0002 for more details.
+Call Stack (most recent call first):
+  CMakeLists.txt:98 (rosidl_generate_interfaces)
+
+

@@ -1,0 +1,24 @@
+{
+  "package_name": "position_controller",
+  "output_dir": "/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_generator_py/position_controller",
+  "template_dir": "/opt/ros/eloquent/share/rosidl_generator_py/cmake/../resource",
+  "idl_tuples": [
+    "/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_adapter/position_controller:msg/Positiondef.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/eloquent/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
+    "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_generator_py/__init__.py",
+    "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_generator_py/generate_py_impl.py",
+    "/opt/ros/eloquent/share/rosidl_generator_py/cmake/../resource/_action_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/eloquent/share/rosidl_generator_py/cmake/../resource/_action.py.em",
+    "/opt/ros/eloquent/share/rosidl_generator_py/cmake/../resource/_idl_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/eloquent/share/rosidl_generator_py/cmake/../resource/_idl_support.c.em",
+    "/opt/ros/eloquent/share/rosidl_generator_py/cmake/../resource/_idl.py.em",
+    "/opt/ros/eloquent/share/rosidl_generator_py/cmake/../resource/_msg_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/eloquent/share/rosidl_generator_py/cmake/../resource/_msg_support.c.em",
+    "/opt/ros/eloquent/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
+    "/opt/ros/eloquent/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/eloquent/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
+    "/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_adapter/position_controller/msg/Positiondef.idl"
+  ]
+}

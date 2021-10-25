@@ -1,0 +1,17 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {chapter}{Introduzione}{1}{chapter*.4}
+\contentsline {chapter}{\numberline {1}Strumenti di sviluppo: ROS 2 e Gazebo}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Comunicazione in ROS 2}{4}{section.1.1}
+\contentsline {section}{\numberline {1.2}Struttura di un ambiente di sviluppo in ROS 2}{7}{section.1.2}
+\contentsline {section}{\numberline {1.3}GAZEBO E URDF}{11}{section.1.3}
+\contentsline {chapter}{\numberline {2}Modellazione e controllo di un uniciclo}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}Modello matematico}{15}{section.2.1}
+\contentsline {section}{\numberline {2.2}Controllore}{16}{section.2.2}
+\contentsline {chapter}{\numberline {3}Implementazione e risultati}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}Implementazione}{19}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Pianificatore}{21}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Controllore}{21}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}TurtleBot 3}{25}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Risultati}{26}{section.3.2}
+\contentsline {chapter}{\numberline {4}Conclusioni}{29}{chapter.4}

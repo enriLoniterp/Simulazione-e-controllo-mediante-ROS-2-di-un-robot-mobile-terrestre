@@ -1,0 +1,221 @@
+URDF (base costruzione)
+
+Documento simil-xml
+
+<?xml version="1.0"?>
+<robot name="myfirst">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.6" radius="0.2"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>
+
+Parametri che definiscono un cilindro con punto di massa al centro del corpo.
+/////
+
+<?xml version="1.0"?>
+<robot name="multipleshapes">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.6" radius="0.2"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="right_leg">
+    <visual>
+      <geometry>
+        <box size="0.6 0.1 0.2"/>
+      </geometry>
+    </visual>
+  </link>
+
+   <joint name="base_to_right_leg" type="fixed">
+    <parent link="base_link"/>
+    <child link="right_leg"/>
+    <origin xyz="0 -0.22 0.25"/>
+  </joint>
+
+</robot>
+
+Aggiunto elemento joint che permette l'unione dei due link(oggetto solido) tramite un legame di parentela.
+Per non avere il link con la stessa orgine del parent definiamo una nuova orgine nello spazio.
+Dopo aver definito l'oggetto solido è necessario potermo far muovere e dargli delle proprietà concrete del mondo esterno.
+
+Per prima cosa è necessario fixare i joint rimasti precedentemente.
+
+TIPO CONTINUOS
+
+ <joint name="head_swivel" type="continuous">
+    <parent link="base_link"/>
+    <child link="head"/>
+    <axis xyz="0 0 1"/>
+    <origin xyz="0 0 0.3"/>
+  </joint>
+  
+In questo modo una "head" permette la rotazione "0 0 1" intorno all'origine. La tipologia di joint è continuos la quale permette di avere un movimento continuo dell'oggetto
+
+TIPO REVOLUTE
+
+  <joint name="left_gripper_joint" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit effort="1000.0" lower="0.0" upper="0.548" velocity="0.5"/>
+    <origin rpy="0 0 0" xyz="0.2 0.01 0"/>
+    <parent link="gripper_pole"/>
+    <child link="left_gripper"/>
+  </joint>
+  
+ 
+ Come precedente ma hanno limiti in termini più specifici come velocità e limite massimo di rivoluzione in radianti
+ 
+TYPE PRISMATIC
+<joint name="gripper_extension" type="prismatic">
+    <parent link="base_link"/>
+    <child link="gripper_pole"/>
+    <limit effort="1000.0" lower="-0.38" upper="0" velocity="0.5"/>
+    <origin rpy="0 0 0" xyz="0.19 0 0.2"/>
+  </joint>
+  
+  Permette il movimento lungo un asse, non intorno(esempio di un braccio meccanico che si estende e retrae.L'unità massima di espansione è descritta in metri, non radianti.
+  
+  Altri due tipi di joint sono il PLANNAR JOINT che permette il movimento in due dimensioni
+
+Ultimo passo quello di specificare the pose.
+Proceidmento di simuling consiste nella GUI xhe parsa l'urdf e trova ii joint senza corrispondenti. In seguito usa uno slider per pubblicare dei messaggi dei senori nel jointState. QUesti vengono usati per calcolare tutte le trasformazioni(dal joint State Publisher e proiettarle nella simulazione con Rviz.
+
+
+
+XACRO
+
+Puoi usare il package xacro per velocizzare la descrizione dei robot.
+Xacro è un macro language.
+
+COSTANTI
+
+Con Xacro ti permette di specificare la proprietà come delle costanti per esempio:
+<xacro:property name="width" value="0.2" />
+<xacro:property name="bodylen" value="0.6" />
+
+<cylinder radius="${width}" length="${bodylen}"/>
+
+potendo combinarlo come in questo esempio:
+
+<xacro:property name=”robotname” value=”marvin” />
+<link name=”${robotname}s_leg” /> $
+
+<link name=”marvins_leg” />
+
+MATEMATICA
+
+Si può anche scrivere operazioni matematiche come per esempio:
+
+<cylinder radius="${wheeldiam/2}" length="0.1"/>$
+<origin xyz="${reflect*(width+.02)} 0 0.25" />$
+
+MACROS
+
+Definizione della Macro:
+
+<xacro:macro name="default_origin">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+</xacro:macro>
+<xacro:default_origin />
+
+<origin rpy="0 0 0" xyz="0 0 0"/>
+
+E' più utile generare una macro in una espressione matematica!\\
+
+<xacro:macro name="default_inertial" params="mass">
+        <inertial>
+                <mass value="${mass}$" />
+                <inertia ixx="1.0" ixy="0.0" ixz="0.0"
+                     iyy="1.0" iyz="0.0"
+                     izz="1.0" />
+        </inertial>
+    </xacro:macro> 
+    
+    
+che può essere invocato con il codice:
+
+<xacro:macro name="leg" params="prefix reflect">
+    <link name="${prefix}_leg">
+        <visual>
+            <geometry>
+                <box size="${leglen} 0.1 0.2"/>
+            </geometry>
+            <origin xyz="0 0 -${leglen/2}" rpy="0 ${pi/2} 0"/>
+            <material name="white"/>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="${leglen} 0.1 0.2"/>
+            </geometry>
+            <origin xyz="0 0 -${leglen/2}" rpy="0 ${pi/2} 0"/>
+        </collision>
+        <xacro:default_inertial mass="10"/>
+    </link>
+
+    <joint name="base_to_${prefix}_leg" type="fixed">
+        <parent link="base_link"/>
+        <child link="${prefix}_leg"/>
+        <origin xyz="0 ${reflect*(width+.02)} 0.25" />
+    </joint>
+    <!-- A bunch of stuff cut -->
+</xacro:macro>
+<xacro:leg prefix="right" reflect="1" />
+<xacro:leg prefix="left" reflect="-1" />
+ 
+///////////////////////////////////////////////////////
+
+COME USARE URDF CON GAZEBO
+
+However, it doesn't do anything, and is missing lots of key information that ROS would need to use this robot. Previously we had been using joint_state_publisher to specify the pose of each joint. However, the robot itself should provide that information in the real world or in gazebo. Yet without specifying that, Gazebo doesn't know to publish that information. 
+Per rendere interrativo con ros è necessario specificare dei plugin e dei controllori.
+
+<gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/</robotNamespace>
+    </plugin>
+</gazebo>
+
+Per generare i controlloer fondamentali per l'opertività del nostro per prima cosa controlliamo il file joint.yaml. I controlli definiti in questo file pubblicano da Gazebo direttamente dentro ROS.
+
+È quindi necessario collegare ognijoint ad una specifica transmission cosa fare a un joint.
+
+Esempio:
+
+ <transmission name="head_swivel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="$head_swivel_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="head_swivel">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+  </transmission>
+  
+  $
+  
+  
+Aggiungere per sistemare il controllore:
+
+type: "position_controllers/JointPositionController"
+joint: head_swivel
+
+In questo modo Gazebo è iscritto ad un nuovo topic e puoi controllare la posizione pubblicando valori da ROS. Appena questo comando è pubblicato cambierà immediatamente nel valore.
+
+Per controllare la ruota di un drone potremmo usare questo codice:
+
+<transmission name="${prefix}_${suffix}_wheel_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <actuator name="${prefix}_${suffix}_wheel_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+      <joint name="${prefix}_${suffix}_wheel_joint">
+        <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      </joint>
+    </transmission>

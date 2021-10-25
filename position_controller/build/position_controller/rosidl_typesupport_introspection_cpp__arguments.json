@@ -1,0 +1,19 @@
+{
+  "package_name": "position_controller",
+  "output_dir": "/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_typesupport_introspection_cpp/position_controller",
+  "template_dir": "/opt/ros/eloquent/share/rosidl_typesupport_introspection_cpp/resource",
+  "idl_tuples": [
+    "/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_adapter/position_controller:msg/Positiondef.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/eloquent/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp",
+    "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_typesupport_introspection_cpp/__init__.py",
+    "/opt/ros/eloquent/share/rosidl_typesupport_introspection_cpp/resource/idl__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/eloquent/share/rosidl_typesupport_introspection_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/eloquent/share/rosidl_typesupport_introspection_cpp/resource/msg__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/eloquent/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/eloquent/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/eloquent/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
+    "/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_adapter/position_controller/msg/Positiondef.idl"
+  ]
+}

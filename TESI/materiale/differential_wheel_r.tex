@@ -1,0 +1,40 @@
+\documentclass[11pt]{article}
+
+\begin{document}
+
+DIFFERENTIAL DRIVE KINEMATICS
+
+Il meccanismo dei Robot a a ruote differenziali consiste nell'avere due ruote che in maniera indipendente avanti o indietro.
+Variando la velocità delle due ruote il robot ruota intorno a un punto denominato ICC(InstantaneousCenterofCurvature).
+
+Associamo quindi la velocità angolare con quella tangenziale della ruota e otteniamo il sistema:
+
+$\omega\cdot(R+(l/2))$
+$\omega\cdot(R-(l/2))$
+
+Risolviamo il sistema e otteniamo R e $\omega$
+
+$ R = (l/2)\cdot(\frac{Vr+Vl}{Vr-Vl})$
+$\omega=\frac{Vr-Vl}{l}$
+
+Ci sono 3 casi speciali:
+
+1)Vl=vR per la quale abbiamo la velocità angolare a 0 e quindi un movimento in linea retta del robot
+2) Vl=-Vr con R=0 e quindi una rotazione circolare del robot rispetto al punto medio dell'asse del robot
+3) se Vl=0 allora la rotazione è della ruota destra rispetto alla sinistra  viceversa.
+
+Scriviamo la legge della cinematica per Robot Differenziali:
+Assumiamo il punto medio del robot alle coordinate (x,y) e consideriamo il sistema di riferimento x e y con \theta l'angolo che si forma tra l'asse delle x e la traiettoria del robot allora possiamo ricavarci il punto ICC come 
+
+$ ICC = [ x - Rsin(\theta), y + Rcos(\theta) ] $
+
+e ad un tempo t + omega la posizione del robot sarà:
+
+http://www.cs.columbia.edu/~allen/F15/NOTES/icckinematics.pdf
+
+(prendere l'immagine dal file).
+
+
+
+
+\end{document}

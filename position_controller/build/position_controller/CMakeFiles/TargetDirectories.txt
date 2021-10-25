@@ -1,0 +1,11 @@
+/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/CMakeFiles/install/strip.dir
+/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/CMakeFiles/install.dir
+/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/CMakeFiles/rebuild_cache.dir
+/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/CMakeFiles/uninstall.dir
+/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/CMakeFiles/position_controllerr.dir
+/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/CMakeFiles/install/local.dir
+/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/CMakeFiles/position_controller_uninstall.dir
+/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/CMakeFiles/test.dir
+/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/CMakeFiles/list_install_components.dir
+/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/CMakeFiles/pianificatore.dir
+/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/CMakeFiles/edit_cache.dir

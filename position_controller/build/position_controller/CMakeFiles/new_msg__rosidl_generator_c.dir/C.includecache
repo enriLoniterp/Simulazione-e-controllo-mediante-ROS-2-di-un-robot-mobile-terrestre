@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_generator_c/position_controller/msg/positiondef__functions.c
+position_controller/msg/positiondef__functions.h
+/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_generator_c/position_controller/msg/position_controller/msg/positiondef__functions.h
+assert.h
+-
+stdbool.h
+-
+stdlib.h
+-
+string.h
+-
+
+/opt/ros/eloquent/include/rosidl_generator_c/visibility_control.h
+
+rosidl_generator_c/position_controller/msg/positiondef__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_generator_c/visibility_control.h
+rosidl_generator_c/position_controller/msg/rosidl_generator_c/visibility_control.h
+position_controller/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/position_controller/msg/position_controller/msg/rosidl_generator_c__visibility_control.h
+position_controller/msg/positiondef__struct.h
+rosidl_generator_c/position_controller/msg/position_controller/msg/positiondef__struct.h
+
+rosidl_generator_c/position_controller/msg/positiondef__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
+rosidl_generator_c/position_controller/msg/rosidl_generator_c__visibility_control.h
+

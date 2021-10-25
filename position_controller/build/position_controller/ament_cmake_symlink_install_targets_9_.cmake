@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_generator_py/position_controller/libnew_msg__python.so" "TARGETS" "new_msg__python" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

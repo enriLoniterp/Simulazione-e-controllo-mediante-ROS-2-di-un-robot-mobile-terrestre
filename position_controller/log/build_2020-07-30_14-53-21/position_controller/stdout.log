@@ -1,0 +1,5 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/position_controllerr.dir/src/position_controll.cpp.o[0m
+[ 75%] Built target pianificatore
+CMakeFiles/position_controllerr.dir/build.make:62: recipe for target 'CMakeFiles/position_controllerr.dir/src/position_controll.cpp.o' failed
+CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/position_controllerr.dir/all' failed
+Makefile:140: recipe for target 'all' failed

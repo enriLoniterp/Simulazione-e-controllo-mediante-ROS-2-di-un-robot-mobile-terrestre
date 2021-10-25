@@ -1,0 +1,9 @@
+In file included from [01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:1:0[m[K:
+[01m[K/home/enrico/turtlebot3_ws/src/position_controller/include/position_controller/position_controll.hpp:12:10:[m[K [01;31m[Kfatal error: [m[Kposition_controller/msg/Positiondef.hpp: File o directory non esistente
+ #include [01;31m[K<position_controller/msg/Positiondef.hpp>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/position_controller.dir/src/position_controll.cpp.o] Error 1
+make[1]: *** [CMakeFiles/position_controller.dir/all] Error 2
+make[1]: *** Attesa per i processi non terminati....
+make: *** [all] Error 2

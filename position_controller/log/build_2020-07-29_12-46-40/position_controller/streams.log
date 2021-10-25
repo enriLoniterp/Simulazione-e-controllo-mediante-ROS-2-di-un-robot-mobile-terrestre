@@ -1,0 +1,68 @@
+[0.019s] Invoking command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller -- -j4 -l4
+[0.079s] [35m[1mScanning dependencies of target pianificatore[0m
+[0.080s] [35m[1mScanning dependencies of target position_controller[0m
+[0.109s] [ 25%] [32mBuilding CXX object CMakeFiles/pianificatore.dir/src/pianificatore.cpp.o[0m
+[0.118s] [ 50%] [32mBuilding CXX object CMakeFiles/position_controller.dir/src/position_controll.cpp.o[0m
+[1.303s] [01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:[m[K In member function ‘[01m[Kvoid Tb3BurgerPosCtrl::get_position(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.304s] [01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:44:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvirgola[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.304s]      char [01;35m[Kvirgola[m[K = ',';
+[1.304s]           [01;35m[K^~~~~~~[m[K
+[1.304s] [01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:47:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpos[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[1.304s]      int [01;35m[Kpos[m[K=0;
+[1.304s]          [01;35m[K^~~[m[K
+[3.415s] [ 75%] [32m[1mLinking CXX executable pianificatore[0m
+[3.698s] [ 75%] Built target pianificatore
+[5.119s] [100%] [32m[1mLinking CXX executable position_controller[0m
+[5.766s] [100%] Built target position_controller
+[5.778s] Invoked command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller -- -j4 -l4
+[5.821s] Invoking command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller --target install -- -j4 -l4
+[5.890s] [100%] Built target position_controller
+[5.891s] [100%] Built target pianificatore
+[5.911s] [36mInstall the project...[0m
+[5.927s] -- Install configuration: ""
+[5.928s] -- Installing: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/position_controller/position_controller
+[5.930s] -- Set runtime path of "/home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/position_controller/position_controller" to ""
+[5.931s] -- Installing: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/position_controller/pianificatore
+[5.932s] -- Set runtime path of "/home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/position_controller/pianificatore" to ""
+[5.932s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//launch
+[5.932s] -- Installing: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//launch/robot_state_publisher.launch.py
+[5.932s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//launch/position_controll.py
+[5.932s] -- Installing: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//launch/empty_world.launch.py
+[5.933s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models
+[5.933s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger
+[5.933s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/model-1_4.sdf
+[5.933s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/model.config
+[5.933s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/model.sdf
+[5.933s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/meshes
+[5.933s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/meshes/lds.dae
+[5.934s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/meshes/left_tire.dae
+[5.934s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/meshes/burger_base.dae
+[5.934s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/meshes/right_tire.dae
+[5.934s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//worlds
+[5.934s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//worlds/empty_worlds
+[5.934s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//worlds/empty_worlds/burger.model
+[5.934s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//worlds/empty_worlds/waffle.model
+[5.934s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//worlds/empty_worlds/waffle_pi.model
+[5.934s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/
+[5.935s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include//pianificatore
+[5.935s] -- Installing: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include//pianificatore/pianificatore.hpp
+[5.935s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include//position_controller
+[5.935s] -- Installing: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include//position_controller/position_controll.hpp
+[5.935s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/ament_index/resource_index/package_run_dependencies/position_controller
+[5.935s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/ament_index/resource_index/parent_prefix_path/position_controller
+[5.935s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/environment/ament_prefix_path.sh
+[5.935s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/environment/ament_prefix_path.dsv
+[5.935s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/environment/path.sh
+[5.935s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/environment/path.dsv
+[5.935s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/local_setup.bash
+[5.935s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/local_setup.sh
+[5.936s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/local_setup.zsh
+[5.936s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/local_setup.dsv
+[5.936s] -- Installing: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/package.dsv
+[5.936s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/ament_index/resource_index/packages/position_controller
+[5.936s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.936s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.936s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/cmake/position_controllerConfig.cmake
+[5.936s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/cmake/position_controllerConfig-version.cmake
+[5.936s] -- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/package.xml
+[5.939s] Invoked command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller --target install -- -j4 -l4

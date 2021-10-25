@@ -1,0 +1,100 @@
+[0.014s] Invoking command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_gazebo:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake /home/enrico/turtlebot3_ws/src/position_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/enrico/turtlebot3_ws/src/position_controller/install/position_controller
+[0.089s] -- The C compiler identification is GNU 7.5.0
+[0.150s] -- The CXX compiler identification is GNU 7.5.0
+[0.160s] -- Check for working C compiler: /usr/bin/cc
+[0.233s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.240s] -- Detecting C compiler ABI info
+[0.312s] -- Detecting C compiler ABI info - done
+[0.323s] -- Detecting C compile features
+[0.553s] -- Detecting C compile features - done
+[0.561s] -- Check for working CXX compiler: /usr/bin/c++
+[0.643s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.644s] -- Detecting CXX compiler ABI info
+[0.725s] -- Detecting CXX compiler ABI info - done
+[0.730s] -- Detecting CXX compile features
+[1.082s] -- Detecting CXX compile features - done
+[1.085s] -- Found gazebo_ros_pkgs: 3.4.4 (/opt/ros/eloquent/share/gazebo_ros_pkgs/cmake)
+[1.096s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[1.143s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[1.144s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.333s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.377s] -- Found geometry_msgs: 0.8.1 (/opt/ros/eloquent/share/geometry_msgs/cmake)
+[1.408s] -- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[1.463s] -- Found nav_msgs: 0.8.1 (/opt/ros/eloquent/share/nav_msgs/cmake)
+[1.476s] -- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)
+[1.563s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") 
+[1.588s] -- Found FastRTPS: /opt/ros/eloquent/include  
+[1.667s] -- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+[1.698s] -- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+[1.700s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.705s] -- Looking for pthread.h
+[1.780s] -- Looking for pthread.h - found
+[1.786s] -- Looking for pthread_create
+[1.872s] -- Looking for pthread_create - not found
+[1.873s] -- Looking for pthread_create in pthreads
+[1.955s] -- Looking for pthread_create in pthreads - not found
+[1.955s] -- Looking for pthread_create in pthread
+[2.028s] -- Looking for pthread_create in pthread - found
+[2.029s] -- Found Threads: TRUE  
+[2.095s] -- Found tf2: 0.12.5 (/opt/ros/eloquent/share/tf2/cmake)
+[2.103s] -- Found sensor_msgs: 0.8.1 (/opt/ros/eloquent/share/sensor_msgs/cmake)
+[2.114s] -- Found turtlebot3: 2.1.0 (/home/enrico/turtlebot3_ws/install/turtlebot3/share/turtlebot3/cmake)
+[2.117s] -- Found rclcpp_components: 0.8.4 (/opt/ros/eloquent/share/rclcpp_components/cmake)
+[2.124s] -- Found poco_vendor:  (/opt/ros/eloquent/share/poco_vendor/cmake)
+[2.180s] -- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+[2.318s] -- Found ament_cmake_cppcheck: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_cppcheck/cmake)
+[2.321s] -- Found ament_cmake_cpplint: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_cpplint/cmake)
+[2.325s] -- Found ament_cmake_uncrustify: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_uncrustify/cmake)
+[2.336s] -- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c
+[2.344s] -- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp
+[2.475s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") 
+[2.478s] -- Found python_cmake_module: 0.8.0 (/opt/ros/eloquent/share/python_cmake_module/cmake)
+[2.514s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.9", minimum required is "3.5") 
+[2.514s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.514s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m
+[2.514s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so
+[2.546s] -- Found PythonExtra: .so  
+[2.681s] -- Found ament_cmake_flake8: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_flake8/cmake)
+[2.684s] -- Found ament_cmake_pep257: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_pep257/cmake)
+[2.841s] -- Found ament_lint_auto: 0.8.1 (/opt/ros/eloquent/share/ament_lint_auto/cmake)
+[2.874s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.876s] -- Configured cppcheck include dirs: /home/enrico/turtlebot3_ws/src/position_controller/include;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_generator_c;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_typesupport_c;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_typesupport_fastrtps_c;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_generator_cpp;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_typesupport_fastrtps_cpp;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_typesupport_introspection_c;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_generator_py
+[2.889s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.903s] -- Added test 'uncrustify' to check C / C++ code style
+[2.905s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.907s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.924s] -- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code
+[2.928s] -- Added test 'lint_cmake' to check CMake code style
+[2.930s] -- Added test 'xmllint' to check XML markup files
+[2.936s] -- Configuring done
+[3.009s] -- Generating done
+[3.013s] -- Build files have been written to: /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller
+[3.019s] Invoked command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_gazebo:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake /home/enrico/turtlebot3_ws/src/position_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/enrico/turtlebot3_ws/src/position_controller/install/position_controller
+[3.023s] Invoking command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_gazebo:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller -- -j4 -l4
+[3.074s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.074s] [35m[1mScanning dependencies of target pianificatore[0m
+[3.074s] [35m[1mScanning dependencies of target position_controller[0m
+[3.075s] [35m[1mScanning dependencies of target new_msg__cpp[0m
+[3.093s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.144s] [  9%] [32mBuilding CXX object CMakeFiles/pianificatore.dir/src/pianificatore.cpp.o[0m
+[3.147s] [ 12%] [32mBuilding CXX object CMakeFiles/position_controller.dir/src/position_controll.cpp.o[0m
+[3.300s] In file included from [01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:1:0[m[K:
+[3.300s] [01m[K/home/enrico/turtlebot3_ws/src/position_controller/include/position_controller/position_controll.hpp:12:10:[m[K [01;31m[Kfatal error: [m[Kposition_controller/msg/Positiondef.hpp: File o directory non esistente
+[3.301s]  #include [01;31m[K<position_controller/msg/Positiondef.hpp>[m[K
+[3.301s]           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.301s] compilation terminated.
+[3.310s] CMakeFiles/position_controller.dir/build.make:62: recipe for target 'CMakeFiles/position_controller.dir/src/position_controll.cpp.o' failed
+[3.310s] make[2]: *** [CMakeFiles/position_controller.dir/src/position_controll.cpp.o] Error 1
+[3.310s] CMakeFiles/Makefile2:636: recipe for target 'CMakeFiles/position_controller.dir/all' failed
+[3.311s] make[1]: *** [CMakeFiles/position_controller.dir/all] Error 2
+[3.311s] make[1]: *** Attesa per i processi non terminati....
+[3.483s] [35m[1mScanning dependencies of target new_msg__rosidl_generator_c[0m
+[3.496s] [ 15%] [32mBuilding C object CMakeFiles/new_msg__rosidl_generator_c.dir/rosidl_generator_c/position_controller/msg/positiondef__functions.c.o[0m
+[3.542s] [ 18%] [32m[1mLinking C shared library libnew_msg__rosidl_generator_c.so[0m
+[3.563s] [ 18%] Built target new_msg__cpp
+[3.589s] [ 18%] Built target new_msg__rosidl_generator_c
+[6.400s] [ 21%] [32m[1mLinking CXX executable pianificatore[0m
+[6.637s] [ 21%] Built target pianificatore
+[6.638s] Makefile:140: recipe for target 'all' failed
+[6.638s] make: *** [all] Error 2
+[6.640s] Invoked command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_gazebo:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller -- -j4 -l4

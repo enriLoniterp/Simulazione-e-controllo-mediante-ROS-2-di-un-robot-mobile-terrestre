@@ -1,0 +1,229 @@
+[0.014s] Invoking command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_gazebo:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake /home/enrico/turtlebot3_ws/src/position_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/enrico/turtlebot3_ws/src/position_controller/install/position_controller
+[0.071s] -- The C compiler identification is GNU 7.5.0
+[0.128s] -- The CXX compiler identification is GNU 7.5.0
+[0.132s] -- Check for working C compiler: /usr/bin/cc
+[0.204s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.204s] -- Detecting C compiler ABI info
+[0.276s] -- Detecting C compiler ABI info - done
+[0.281s] -- Detecting C compile features
+[0.493s] -- Detecting C compile features - done
+[0.495s] -- Check for working CXX compiler: /usr/bin/c++
+[0.577s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.577s] -- Detecting CXX compiler ABI info
+[0.665s] -- Detecting CXX compiler ABI info - done
+[0.669s] -- Detecting CXX compile features
+[1.016s] -- Detecting CXX compile features - done
+[1.019s] -- Found gazebo_ros_pkgs: 3.4.4 (/opt/ros/eloquent/share/gazebo_ros_pkgs/cmake)
+[1.022s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[1.060s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[1.060s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.247s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.284s] -- Found geometry_msgs: 0.8.1 (/opt/ros/eloquent/share/geometry_msgs/cmake)
+[1.308s] -- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[1.363s] -- Found nav_msgs: 0.8.1 (/opt/ros/eloquent/share/nav_msgs/cmake)
+[1.377s] -- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)
+[1.466s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") 
+[1.490s] -- Found FastRTPS: /opt/ros/eloquent/include  
+[1.562s] -- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+[1.586s] -- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+[1.588s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.589s] -- Looking for pthread.h
+[1.663s] -- Looking for pthread.h - found
+[1.663s] -- Looking for pthread_create
+[1.743s] -- Looking for pthread_create - not found
+[1.744s] -- Looking for pthread_create in pthreads
+[1.809s] -- Looking for pthread_create in pthreads - not found
+[1.809s] -- Looking for pthread_create in pthread
+[1.881s] -- Looking for pthread_create in pthread - found
+[1.882s] -- Found Threads: TRUE  
+[1.920s] -- Found tf2: 0.12.5 (/opt/ros/eloquent/share/tf2/cmake)
+[1.927s] -- Found sensor_msgs: 0.8.1 (/opt/ros/eloquent/share/sensor_msgs/cmake)
+[1.939s] -- Found turtlebot3: 2.1.0 (/home/enrico/turtlebot3_ws/install/turtlebot3/share/turtlebot3/cmake)
+[1.942s] -- Found rclcpp_components: 0.8.4 (/opt/ros/eloquent/share/rclcpp_components/cmake)
+[1.949s] -- Found poco_vendor:  (/opt/ros/eloquent/share/poco_vendor/cmake)
+[2.005s] -- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+[2.143s] -- Found ament_cmake_cppcheck: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_cppcheck/cmake)
+[2.146s] -- Found ament_cmake_cpplint: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_cpplint/cmake)
+[2.150s] -- Found ament_cmake_uncrustify: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_uncrustify/cmake)
+[2.161s] -- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c
+[2.169s] -- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp
+[2.300s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") 
+[2.302s] -- Found python_cmake_module: 0.8.0 (/opt/ros/eloquent/share/python_cmake_module/cmake)
+[2.339s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.9", minimum required is "3.5") 
+[2.339s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.339s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m
+[2.339s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so
+[2.371s] -- Found PythonExtra: .so  
+[2.510s] -- Found ament_cmake_flake8: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_flake8/cmake)
+[2.514s] -- Found ament_cmake_pep257: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_pep257/cmake)
+[2.672s] -- Found ament_lint_auto: 0.8.1 (/opt/ros/eloquent/share/ament_lint_auto/cmake)
+[2.705s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.707s] -- Configured cppcheck include dirs: /home/enrico/turtlebot3_ws/src/position_controller/include;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_generator_c;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_typesupport_c;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_typesupport_fastrtps_c;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_generator_cpp;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_typesupport_fastrtps_cpp;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_typesupport_introspection_c;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_generator_py
+[2.722s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.736s] -- Added test 'uncrustify' to check C / C++ code style
+[2.738s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.741s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.759s] -- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code
+[2.763s] -- Added test 'lint_cmake' to check CMake code style
+[2.766s] -- Added test 'xmllint' to check XML markup files
+[2.772s] -- Configuring done
+[2.844s] -- Generating done
+[2.848s] -- Build files have been written to: /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller
+[2.854s] Invoked command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_gazebo:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake /home/enrico/turtlebot3_ws/src/position_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/enrico/turtlebot3_ws/src/position_controller/install/position_controller
+[2.857s] Invoking command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_gazebo:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller -- -j4 -l4
+[2.909s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.909s] [35m[1mScanning dependencies of target new_msg__cpp[0m
+[2.909s] [35m[1mScanning dependencies of target position_controller[0m
+[2.910s] [35m[1mScanning dependencies of target pianificatore[0m
+[2.927s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.970s] [  9%] [32mBuilding CXX object CMakeFiles/pianificatore.dir/src/pianificatore.cpp.o[0m
+[2.991s] [ 12%] [32mBuilding CXX object CMakeFiles/position_controller.dir/src/position_controll.cpp.o[0m
+[3.412s] [ 12%] Built target new_msg__cpp
+[3.447s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.503s] [35m[1mScanning dependencies of target new_msg__rosidl_generator_c[0m
+[3.525s] [ 18%] [32mBuilding C object CMakeFiles/new_msg__rosidl_generator_c.dir/rosidl_generator_c/position_controller/msg/positiondef__functions.c.o[0m
+[3.592s] [ 21%] [32m[1mLinking C shared library libnew_msg__rosidl_generator_c.so[0m
+[3.656s] [ 21%] Built target new_msg__rosidl_generator_c
+[3.676s] [ 24%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.955s] [35m[1mScanning dependencies of target new_msg__rosidl_typesupport_fastrtps_cpp[0m
+[3.987s] [ 27%] [32mBuilding CXX object CMakeFiles/new_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/position_controller/msg/dds_fastrtps/positiondef__type_support.cpp.o[0m
+[4.163s] [35m[1mScanning dependencies of target new_msg__rosidl_typesupport_introspection_cpp[0m
+[4.186s] [ 30%] [32mBuilding CXX object CMakeFiles/new_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/position_controller/msg/positiondef__type_support.cpp.o[0m
+[4.583s] [ 33%] [32m[1mLinking CXX shared library libnew_msg__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.590s] [ 36%] [32m[1mLinking CXX shared library libnew_msg__rosidl_typesupport_introspection_cpp.so[0m
+[4.661s] [ 36%] Built target new_msg__rosidl_typesupport_introspection_cpp
+[4.682s] [ 39%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.738s] [ 39%] Built target new_msg__rosidl_typesupport_fastrtps_cpp
+[4.758s] [ 42%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[5.172s] [35m[1mScanning dependencies of target new_msg__rosidl_typesupport_introspection_c[0m
+[5.195s] [ 45%] [32mBuilding C object CMakeFiles/new_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/position_controller/msg/positiondef__type_support.c.o[0m
+[5.204s] [35m[1mScanning dependencies of target new_msg__rosidl_typesupport_cpp[0m
+[5.238s] [ 48%] [32mBuilding CXX object CMakeFiles/new_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/position_controller/msg/positiondef__type_support.cpp.o[0m
+[5.248s] [ 51%] [32m[1mLinking C shared library libnew_msg__rosidl_typesupport_introspection_c.so[0m
+[5.303s] [ 51%] Built target new_msg__rosidl_typesupport_introspection_c
+[5.321s] [ 54%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.825s] [ 57%] [32m[1mLinking CXX shared library libnew_msg__rosidl_typesupport_cpp.so[0m
+[5.842s] [35m[1mScanning dependencies of target new_msg__rosidl_typesupport_fastrtps_c[0m
+[5.875s] [ 60%] [32mBuilding CXX object CMakeFiles/new_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/position_controller/msg/positiondef__type_support_c.cpp.o[0m
+[5.977s] [ 60%] Built target new_msg__rosidl_typesupport_cpp
+[6.233s] [ 63%] [32m[1mLinking CXX shared library libnew_msg__rosidl_typesupport_fastrtps_c.so[0m
+[6.346s] [ 63%] Built target new_msg__rosidl_typesupport_fastrtps_c
+[6.360s] [ 66%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[6.637s] [35m[1mScanning dependencies of target new_msg__rosidl_typesupport_c[0m
+[6.653s] [ 69%] [32mBuilding CXX object CMakeFiles/new_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/position_controller/msg/positiondef__type_support.cpp.o[0m
+[6.687s] [ 72%] [32m[1mLinking CXX shared library libnew_msg__rosidl_typesupport_c.so[0m
+[6.749s] [ 72%] Built target new_msg__rosidl_typesupport_c
+[6.763s] [35m[1mScanning dependencies of target new_msg[0m
+[6.778s] [ 72%] Built target new_msg
+[6.792s] [35m[1mScanning dependencies of target new_msg__py[0m
+[6.806s] [ 75%] [34m[1mGenerating Python code for ROS interfaces[0m
+[7.258s] [ 75%] Built target new_msg__py
+[7.271s] [35m[1mScanning dependencies of target new_msg__python[0m
+[7.295s] [ 78%] [32mBuilding C object CMakeFiles/new_msg__python.dir/rosidl_generator_py/position_controller/msg/_positiondef_s.c.o[0m
+[7.386s] [ 81%] [32m[1mLinking CXX shared library rosidl_generator_py/position_controller/libnew_msg__python.so[0m
+[7.470s] [ 81%] Built target new_msg__python
+[7.489s] [35m[1mScanning dependencies of target position_controller__rosidl_typesupport_c__pyext[0m
+[7.489s] [35m[1mScanning dependencies of target position_controller__rosidl_typesupport_fastrtps_c__pyext[0m
+[7.522s] [ 84%] [32mBuilding C object CMakeFiles/position_controller__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/position_controller/_position_controller_s.ep.rosidl_typesupport_c.c.o[0m
+[7.538s] [ 87%] [32mBuilding C object CMakeFiles/position_controller__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/position_controller/_position_controller_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.658s] [ 90%] [32m[1mLinking CXX shared library rosidl_generator_py/position_controller/position_controller_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so[0m
+[7.664s] [ 93%] [32m[1mLinking CXX shared library rosidl_generator_py/position_controller/position_controller_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so[0m
+[7.769s] [ 93%] Built target position_controller__rosidl_typesupport_c__pyext
+[7.771s] [ 93%] Built target position_controller__rosidl_typesupport_fastrtps_c__pyext
+[8.057s] [ 96%] [32m[1mLinking CXX executable pianificatore[0m
+[8.334s] [ 96%] Built target pianificatore
+[9.799s] [100%] [32m[1mLinking CXX executable position_controller[0m
+[10.121s] [100%] Built target position_controller
+[10.176s] Invoked command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_gazebo:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller -- -j4 -l4
+[10.262s] Invoking command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_gazebo:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller --target install -- -j4 -l4
+[10.331s] [  3%] Built target new_msg__cpp
+[10.331s] [ 12%] Built target new_msg__rosidl_generator_c
+[10.353s] [ 18%] Built target pianificatore
+[10.353s] [ 24%] Built target position_controller
+[10.368s] [ 33%] Built target new_msg__rosidl_typesupport_introspection_cpp
+[10.368s] [ 42%] Built target new_msg__rosidl_typesupport_fastrtps_cpp
+[10.390s] [ 51%] Built target new_msg__rosidl_typesupport_introspection_c
+[10.401s] [ 60%] Built target new_msg__rosidl_typesupport_cpp
+[10.404s] [ 69%] Built target new_msg__rosidl_typesupport_fastrtps_c
+[10.431s] [ 78%] Built target new_msg__rosidl_typesupport_c
+[10.455s] [ 78%] Built target new_msg
+[10.479s] [ 81%] Built target new_msg__py
+[10.508s] [ 87%] Built target new_msg__python
+[10.537s] [100%] Built target position_controller__rosidl_typesupport_c__pyext
+[10.537s] [100%] Built target position_controller__rosidl_typesupport_fastrtps_c__pyext
+[10.558s] [36mInstall the project...[0m
+[10.568s] -- Install configuration: ""
+[10.568s] -- Execute custom install script
+[10.569s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/ament_index/resource_index/rosidl_interfaces/position_controller
+[10.580s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/position_controller/msg/positiondef.hpp
+[10.589s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/position_controller/msg/positiondef__struct.hpp
+[10.600s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/position_controller/msg/positiondef__traits.hpp
+[10.610s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/position_controller/msg/positiondef.h
+[10.620s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/position_controller/msg/positiondef__functions.h
+[10.630s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/position_controller/msg/positiondef__struct.h
+[10.640s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/position_controller/msg/positiondef__type_support.h
+[10.650s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/position_controller/msg/rosidl_generator_c__visibility_control.h
+[10.660s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/environment/library_path.sh
+[10.670s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/environment/library_path.dsv
+[10.680s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/libnew_msg__rosidl_generator_c.so
+[10.690s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/libnew_msg__rosidl_typesupport_c.so
+[10.701s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/libnew_msg__rosidl_typesupport_cpp.so
+[10.711s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/position_controller/msg/positiondef__rosidl_typesupport_introspection_c.h
+[10.721s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/position_controller/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[10.731s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/libnew_msg__rosidl_typesupport_introspection_c.so
+[10.741s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/position_controller/msg/positiondef__rosidl_typesupport_introspection_cpp.hpp
+[10.751s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/libnew_msg__rosidl_typesupport_introspection_cpp.so
+[10.762s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/position_controller/msg/positiondef__rosidl_typesupport_fastrtps_c.h
+[10.772s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/position_controller/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[10.782s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/libnew_msg__rosidl_typesupport_fastrtps_c.so
+[10.793s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/position_controller/msg/positiondef__rosidl_typesupport_fastrtps_cpp.hpp
+[10.803s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/position_controller/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[10.813s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/libnew_msg__rosidl_typesupport_fastrtps_cpp.so
+[10.823s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/environment/pythonpath.sh
+[10.833s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/environment/pythonpath.dsv
+[10.843s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/python3.6/site-packages/position_controller/__init__.py
+[10.853s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/python3.6/site-packages/position_controller/msg/__init__.py
+[10.863s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/python3.6/site-packages/position_controller/msg/_positiondef.py
+[10.874s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/python3.6/site-packages/position_controller/position_controller_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so
+[10.884s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/python3.6/site-packages/position_controller/position_controller_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so
+[10.895s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/libnew_msg__python.so
+[10.905s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/msg/Positiondef.idl
+[10.915s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/msg/Positiondef.msg
+[10.925s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/position_controller/position_controller
+[10.935s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/position_controller/pianificatore
+[10.945s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//launch/empty_world.launch.py
+[10.956s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//launch/position_controll.py
+[10.966s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//launch/robot_state_publisher.launch.py
+[10.976s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/meshes/burger_base.dae
+[10.986s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/meshes/lds.dae
+[10.996s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/meshes/left_tire.dae
+[11.006s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/meshes/right_tire.dae
+[11.016s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/model-1_4.sdf
+[11.026s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/model.config
+[11.036s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/model.sdf
+[11.046s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//worlds/empty_worlds/burger.model
+[11.061s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//worlds/empty_worlds/waffle.model
+[11.073s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//worlds/empty_worlds/waffle_pi.model
+[11.086s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include//pianificatore/pianificatore.hpp
+[11.098s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include//position_controller/position_controll.hpp
+[11.113s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/ament_index/resource_index/package_run_dependencies/position_controller
+[11.125s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/ament_index/resource_index/parent_prefix_path/position_controller
+[11.138s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/environment/ament_prefix_path.sh
+[11.152s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/environment/ament_prefix_path.dsv
+[11.167s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/environment/path.sh
+[11.183s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/environment/path.dsv
+[11.194s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/local_setup.bash
+[11.204s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/local_setup.sh
+[11.215s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/local_setup.zsh
+[11.225s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/local_setup.dsv
+[11.235s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/package.dsv
+[11.246s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/ament_index/resource_index/packages/position_controller
+[11.256s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/cmake/rosidl_cmake-extras.cmake
+[11.267s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.278s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[11.288s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.299s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/cmake/position_controllerConfig.cmake
+[11.310s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/cmake/position_controllerConfig-version.cmake
+[11.323s] -- Symlinking: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/package.xml
+[11.378s] Compiling '/home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/python3.6/site-packages/position_controller/__init__.py'...
+[11.390s] Invoked command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_gazebo:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller --target install -- -j4 -l4

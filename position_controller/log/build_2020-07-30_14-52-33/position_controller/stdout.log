@@ -1,0 +1,40 @@
+-- Found gazebo_ros_pkgs: 3.4.4 (/opt/ros/eloquent/share/gazebo_ros_pkgs/cmake)
+-- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found geometry_msgs: 0.8.1 (/opt/ros/eloquent/share/geometry_msgs/cmake)
+-- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+-- Found nav_msgs: 0.8.1 (/opt/ros/eloquent/share/nav_msgs/cmake)
+-- Found position_controller_msgs: 0.0.0 (/home/enrico/turtlebot3_ws/install/position_controller_msgs/share/position_controller_msgs/cmake)
+-- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)
+-- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found tf2: 0.12.5 (/opt/ros/eloquent/share/tf2/cmake)
+-- Found sensor_msgs: 0.8.1 (/opt/ros/eloquent/share/sensor_msgs/cmake)
+-- Found turtlebot3: 2.1.0 (/home/enrico/turtlebot3_ws/install/turtlebot3/share/turtlebot3/cmake)
+-- Found rclcpp_components: 0.8.4 (/opt/ros/eloquent/share/rclcpp_components/cmake)
+-- Found poco_vendor:  (/opt/ros/eloquent/share/poco_vendor/cmake)
+-- Found ament_lint_auto: 0.8.1 (/opt/ros/eloquent/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/enrico/turtlebot3_ws/src/position_controller/include
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller
+[35m[1mScanning dependencies of target position_controllerr[0m
+[35m[1mScanning dependencies of target pianificatore[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/pianificatore.dir/src/pianificatore.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/position_controllerr.dir/src/position_controll.cpp.o[0m
+CMakeFiles/position_controllerr.dir/build.make:62: recipe for target 'CMakeFiles/position_controllerr.dir/src/position_controll.cpp.o' failed
+CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/position_controllerr.dir/all' failed
+[ 75%] [32m[1mLinking CXX executable pianificatore[0m
+[ 75%] Built target pianificatore
+Makefile:140: recipe for target 'all' failed

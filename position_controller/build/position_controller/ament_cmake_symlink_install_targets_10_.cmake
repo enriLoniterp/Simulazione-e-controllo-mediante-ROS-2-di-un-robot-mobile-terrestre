@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/position_controller" "/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/pianificatore" "TARGETS" "position_controller" "pianificatore" "DESTINATION" "lib/position_controller")

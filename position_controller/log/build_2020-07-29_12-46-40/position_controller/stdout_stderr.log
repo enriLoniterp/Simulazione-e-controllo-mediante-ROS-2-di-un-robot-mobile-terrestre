@@ -1,0 +1,64 @@
+[35m[1mScanning dependencies of target pianificatore[0m
+[35m[1mScanning dependencies of target position_controller[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/pianificatore.dir/src/pianificatore.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/position_controller.dir/src/position_controll.cpp.o[0m
+[01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:[m[K In member function ‘[01m[Kvoid Tb3BurgerPosCtrl::get_position(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:44:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvirgola[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     char [01;35m[Kvirgola[m[K = ',';
+          [01;35m[K^~~~~~~[m[K
+[01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:47:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpos[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Kpos[m[K=0;
+         [01;35m[K^~~[m[K
+[ 75%] [32m[1mLinking CXX executable pianificatore[0m
+[ 75%] Built target pianificatore
+[100%] [32m[1mLinking CXX executable position_controller[0m
+[100%] Built target position_controller
+[100%] Built target position_controller
+[100%] Built target pianificatore
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Installing: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/position_controller/position_controller
+-- Set runtime path of "/home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/position_controller/position_controller" to ""
+-- Installing: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/position_controller/pianificatore
+-- Set runtime path of "/home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/lib/position_controller/pianificatore" to ""
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//launch
+-- Installing: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//launch/robot_state_publisher.launch.py
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//launch/position_controll.py
+-- Installing: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//launch/empty_world.launch.py
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/model-1_4.sdf
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/model.config
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/model.sdf
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/meshes
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/meshes/lds.dae
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/meshes/left_tire.dae
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/meshes/burger_base.dae
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//models/turtlebot3_burger/meshes/right_tire.dae
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//worlds
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//worlds/empty_worlds
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//worlds/empty_worlds/burger.model
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//worlds/empty_worlds/waffle.model
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller//worlds/empty_worlds/waffle_pi.model
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include/
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include//pianificatore
+-- Installing: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include//pianificatore/pianificatore.hpp
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include//position_controller
+-- Installing: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/include//position_controller/position_controll.hpp
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/ament_index/resource_index/package_run_dependencies/position_controller
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/ament_index/resource_index/parent_prefix_path/position_controller
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/environment/path.sh
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/environment/path.dsv
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/local_setup.bash
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/local_setup.sh
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/local_setup.zsh
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/local_setup.dsv
+-- Installing: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/package.dsv
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/ament_index/resource_index/packages/position_controller
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/cmake/position_controllerConfig.cmake
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/cmake/position_controllerConfig-version.cmake
+-- Up-to-date: /home/enrico/turtlebot3_ws/src/position_controller/install/position_controller/share/position_controller/package.xml

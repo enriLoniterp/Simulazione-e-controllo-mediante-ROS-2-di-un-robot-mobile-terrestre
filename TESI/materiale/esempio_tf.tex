@@ -1,0 +1,48 @@
+ROBOT_SETUP & TF
+http://wiki.ros.org/navigation/Tutorials/RobotSetup/TF
+
+tf è una libreria software che permette la trasformazione di dati sia a livelli traslazione che di rotazione rispetto a una cordinata di riferimento che nel caso del Burger sarà il sistema di riferimento di Gazebo e il sistema di riferimento del base_link ovvero la parte mobile del robot(importante inserirlo nel centro rotazionale del robot).
+L'utilità di tf sta proprio nel fatto di poter utilizzare la libreria per svolgere calcoli di trasformazione nello spazio che sarebbe eccessivamente complicato con l'aumentare dei riferimenti nello spazio. E' necessario aggiungere i due nodi nell'transform tree lasciando al software di svolgere autonomamente le trasformazioni necessarie scegliendo accuratamente chi è il parent e chi il child. Nell'esempio base link è il parent e base_laser il child. IN questo modo il nostro robot sarà in grado di ragionare tramite il laser e potersi muovere in completa sicurezza.
+
+
+Esempio di utilizzo di tf
+#include <ros/ros.h>
+#include <tf/transform_broadcaster.h>
+
+int main(int argc, char** argv){
+  ros::init(argc, argv, "robot_tf_publisher");
+  ros::NodeHandle n;
+
+  ros::Rate r(100);
+
+  tf::TransformBroadcaster broadcaster;
+
+  while(n.ok()){
+    broadcaster.sendTransform(//il broadcaster che fa parte della libreria invia la trasformazione che è
+    //composta da 4 coordinate per la rotazione che sono tutte a 0 e 3 per definire la differenza tra "base_link"
+      tf::StampedTransform(tf::Transform(tf::Quaternion(0, 0, 0, 1), 
+      									 tf::Vector3(0.1, 0.0, 0.2)),
+          								 ros::Time::now(),"base_link", "base_laser"));
+    r.sleep();
+  }
+}
+
+Nel nostro caso di interesse sarà fondamentale scrivere una funzione che permette di rapportare il posizionamento del robot nel sistema assoluto di gazebo e del base_link. Dalla posizione di gazebo e con il sistema di riferimento del robot saremmo in grado di facilitare il movimento del robot.
+
+//////////////////////////
+
+http://wiki.ros.org/robot_state_publisher/Tutorials/Using%20the%20robot%20state%20publisher%20on%20your%20own%20robot
+
+ROBOT_STATE_PUBBLISHER
+The robot state publisher helps you to broadcast the state of your robot to the tf transform library. The robot state publisher internally has a kinematic model of the robot; so given the joint positions of the robot, the robot state publisher can compute and broadcast the 3D pose of each link in the robot. 
+
+  #include <robot_state_publisher/robot_state_publisher.h>
+  
+  RobotStatePublisher(const KDL::Tree& tree);
+    
+      // publish moving joints
+  void publishTransforms(const std::map<std::string, double>& joint_positions,
+                         const ros::Time& time);
+
+  // publish fixed joints
+  void publishFixedTransforms();

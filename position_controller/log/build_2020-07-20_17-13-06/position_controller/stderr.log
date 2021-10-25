@@ -1,0 +1,19 @@
+[01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:[m[K In member function ‘[01m[Kvoid Tb3BurgerPosCtrl::get_position(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:43:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvirgola[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     char [01;35m[Kvirgola[m[K = ',';
+          [01;35m[K^~~~~~~[m[K
+[01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:46:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpos[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Kpos[m[K=0;
+         [01;35m[K^~~[m[K
+[01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:[m[K In member function ‘[01m[Kvoid Tb3BurgerPosCtrl::update_callback()[m[K’:
+[01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:130:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kdist[m[K’ was not declared in this scope
+               double rotation = ((LINEAR_VELOCITY)/([01;31m[Kdist[m[K))*((k2*(angle-(atan(-den))))+(sin(angle)*(1+(k1/den2))));
+                                                     [01;31m[K^~~~[m[K
+[01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:130:53:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ktwist[m[K’
+               double rotation = ((LINEAR_VELOCITY)/([01;36m[Kdist[m[K))*((k2*(angle-(atan(-den))))+(sin(angle)*(1+(k1/den2))));
+                                                     [01;36m[K^~~~[m[K
+                                                     [32m[Ktwist[m[K
+make[2]: *** [CMakeFiles/position_controller.dir/src/position_controll.cpp.o] Error 1
+make[1]: *** [CMakeFiles/position_controller.dir/all] Error 2
+make[1]: *** Attesa per i processi non terminati....
+make: *** [all] Error 2

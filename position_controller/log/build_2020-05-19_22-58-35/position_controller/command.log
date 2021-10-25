@@ -1,0 +1,2 @@
+[0.016s] Invoking command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller': /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller -- -j4 -l4
+[0.724s] Invoked command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller' returned '2': /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller -- -j4 -l4

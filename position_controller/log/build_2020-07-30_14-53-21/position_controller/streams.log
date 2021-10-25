@@ -1,0 +1,15 @@
+[0.020s] Invoking command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller -- -j4 -l4
+[0.092s] [ 25%] [32mBuilding CXX object CMakeFiles/position_controllerr.dir/src/position_controll.cpp.o[0m
+[0.098s] [ 75%] Built target pianificatore
+[0.188s] In file included from [01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:1:0[m[K:
+[0.188s] [01m[K/home/enrico/turtlebot3_ws/src/position_controller/include/position_controller/position_controll.hpp:12:10:[m[K [01;31m[Kfatal error: [m[Kposition_controller_msgs/msg/Position.hpp: File o directory non esistente
+[0.188s]  #include [01;31m[K"position_controller_msgs/msg/Position.hpp"[m[K
+[0.188s]           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.189s] compilation terminated.
+[0.196s] CMakeFiles/position_controllerr.dir/build.make:62: recipe for target 'CMakeFiles/position_controllerr.dir/src/position_controll.cpp.o' failed
+[0.196s] make[2]: *** [CMakeFiles/position_controllerr.dir/src/position_controll.cpp.o] Error 1
+[0.196s] make[1]: *** [CMakeFiles/position_controllerr.dir/all] Error 2
+[0.196s] CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/position_controllerr.dir/all' failed
+[0.196s] make: *** [all] Error 2
+[0.196s] Makefile:140: recipe for target 'all' failed
+[0.198s] Invoked command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller -- -j4 -l4

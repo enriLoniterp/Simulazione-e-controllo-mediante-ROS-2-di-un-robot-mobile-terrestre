@@ -1,0 +1,65 @@
+[0.016s] Invoking command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller -- -j4 -l4
+[0.046s] -- Found gazebo_ros_pkgs: 3.4.2 (/opt/ros/eloquent/share/gazebo_ros_pkgs/cmake)
+[0.046s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[0.073s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.277s] -- Found geometry_msgs: 0.8.1 (/opt/ros/eloquent/share/geometry_msgs/cmake)
+[0.287s] -- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[0.323s] -- Found nav_msgs: 0.8.1 (/opt/ros/eloquent/share/nav_msgs/cmake)
+[0.335s] -- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+[0.347s] -- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+[0.349s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.380s] -- Found tf2: 0.12.5 (/opt/ros/eloquent/share/tf2/cmake)
+[0.383s] -- Found sensor_msgs: 0.8.1 (/opt/ros/eloquent/share/sensor_msgs/cmake)
+[0.394s] -- Found turtlebot3: 2.0.1 (/home/enrico/turtlebot3_ws/install/turtlebot3/share/turtlebot3/cmake)
+[0.397s] -- Found rclcpp_action: 0.8.4 (/opt/ros/eloquent/share/rclcpp_action/cmake)
+[0.472s] -- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)
+[0.570s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") 
+[0.594s] -- Found FastRTPS: /opt/ros/eloquent/include  
+[0.680s] -- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+[0.810s] CMake Error at /opt/ros/eloquent/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[0.811s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.811s]   position_controller --arguments-file
+[0.811s]   /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_adapter__arguments__position_controller.json
+[0.811s]   --output-dir
+[0.811s]   /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_adapter/position_controller
+[0.811s]   --output-file
+[0.811s]   /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_adapter/position_controller.idls)
+[0.811s]   returned error code 1:
+[0.812s] 
+[0.812s]   Traceback (most recent call last):
+[0.812s] 
+[0.812s]     File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+[0.812s]       "__main__", mod_spec)
+[0.812s]     File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+[0.812s]       exec(code, run_globals)
+[0.812s]     File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.812s]       sys.exit(main())
+[0.813s]     File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_adapter/main.py", line 55, in main
+[0.813s]       pathlib.Path(relative_path), output_dir)
+[0.813s]     File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_adapter/__init__.py", line 30, in convert_to_idl
+[0.813s]       package_dir, package_name, interface_file, output_dir / 'action')
+[0.813s]     File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_adapter/action/__init__.py", line 28, in convert_action_to_idl
+[0.813s]       action = parse_action_string(package_name, input_file.stem, content)
+[0.813s]     File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_adapter/parser.py", line 877, in parse_action_string
+[0.814s]       pkg_name, action_name + ACTION_GOAL_SUFFIX, goal_string)
+[0.814s]     File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_adapter/parser.py", line 531, in parse_message_string
+[0.814s]       msg = MessageSpecification(pkg_name, msg_name, fields, constants)
+[0.814s]     File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_adapter/parser.py", line 382, in __init__
+[0.814s]       pkg_name + PACKAGE_NAME_MESSAGE_TYPE_SEPARATOR + msg_name)
+[0.814s]     File "/opt/ros/eloquent/lib/python3.6/site-packages/rosidl_adapter/parser.py", line 200, in __init__
+[0.814s]       self.type, VALID_MESSAGE_NAME_PATTERN.pattern))
+[0.814s] 
+[0.814s]   rosidl_adapter.parser.InvalidResourceName: 'position_Goal' is an invalid
+[0.814s]   message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[0.815s] 
+[0.815s] Call Stack (most recent call first):
+[0.815s]   /opt/ros/eloquent/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.815s]   CMakeLists.txt:39 (rosidl_generate_interfaces)
+[0.815s] 
+[0.815s] 
+[0.815s] -- Configuring incomplete, errors occurred!
+[0.815s] See also "/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/CMakeFiles/CMakeOutput.log".
+[0.816s] See also "/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/CMakeFiles/CMakeError.log".
+[0.817s] Makefile:310: recipe for target 'cmake_check_build_system' failed
+[0.818s] make: *** [cmake_check_build_system] Error 1
+[0.819s] Invoked command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller -- -j4 -l4

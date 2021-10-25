@@ -1,0 +1,58 @@
+[0.022s] Invoking command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller -- -j4 -l4
+[0.141s] -- Found gazebo_ros_pkgs: 3.4.4 (/opt/ros/eloquent/share/gazebo_ros_pkgs/cmake)
+[0.141s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[0.191s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[0.192s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.442s] -- Found geometry_msgs: 0.8.1 (/opt/ros/eloquent/share/geometry_msgs/cmake)
+[0.457s] -- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[0.502s] -- Found nav_msgs: 0.8.1 (/opt/ros/eloquent/share/nav_msgs/cmake)
+[0.514s] -- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+[0.532s] -- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+[0.535s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.575s] -- Found tf2: 0.12.5 (/opt/ros/eloquent/share/tf2/cmake)
+[0.579s] -- Found sensor_msgs: 0.8.1 (/opt/ros/eloquent/share/sensor_msgs/cmake)
+[0.591s] -- Found turtlebot3: 2.0.1 (/home/enrico/turtlebot3_ws/install/turtlebot3/share/turtlebot3/cmake)
+[0.595s] -- Found rclcpp_components: 0.8.4 (/opt/ros/eloquent/share/rclcpp_components/cmake)
+[0.605s] -- Found poco_vendor:  (/opt/ros/eloquent/share/poco_vendor/cmake)
+[0.785s] -- Found ament_lint_auto: 0.8.1 (/opt/ros/eloquent/share/ament_lint_auto/cmake)
+[0.906s] -- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code
+[0.921s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.921s] -- Configured cppcheck include dirs: /home/enrico/turtlebot3_ws/src/position_controller/include
+[0.935s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.938s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.943s] -- Added test 'lint_cmake' to check CMake code style
+[0.945s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.959s] -- Added test 'uncrustify' to check C / C++ code style
+[0.962s] -- Added test 'xmllint' to check XML markup files
+[0.968s] -- Configuring done
+[1.052s] -- Generating done
+[1.054s] -- Build files have been written to: /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller
+[1.095s] [35m[1mScanning dependencies of target pianificatore[0m
+[1.095s] [35m[1mScanning dependencies of target position_controller[0m
+[1.131s] [ 25%] [32mBuilding CXX object CMakeFiles/pianificatore.dir/src/pianificatore.cpp.o[0m
+[1.142s] [ 50%] [32mBuilding CXX object CMakeFiles/position_controller.dir/src/position_controll.cpp.o[0m
+[2.437s] [01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:[m[K In member function ‘[01m[Kvoid Tb3BurgerPosCtrl::get_position(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.437s] [01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:43:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvirgola[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.438s]      char [01;35m[Kvirgola[m[K = ',';
+[2.438s]           [01;35m[K^~~~~~~[m[K
+[2.438s] [01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:46:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpos[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.438s]      int [01;35m[Kpos[m[K=0;
+[2.438s]          [01;35m[K^~~[m[K
+[2.442s] [01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:[m[K In member function ‘[01m[Kvoid Tb3BurgerPosCtrl::update_callback()[m[K’:
+[2.442s] [01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:130:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kdist[m[K’ was not declared in this scope
+[2.442s]                double rotation = ((LINEAR_VELOCITY)/([01;31m[Kdist[m[K))*((k2*(angle-(atan(-den))))+(sin(angle)*(1+(k1/den2))));
+[2.442s]                                                      [01;31m[K^~~~[m[K
+[2.443s] [01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:130:53:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ktwist[m[K’
+[2.443s]                double rotation = ((LINEAR_VELOCITY)/([01;36m[Kdist[m[K))*((k2*(angle-(atan(-den))))+(sin(angle)*(1+(k1/den2))));
+[2.443s]                                                      [01;36m[K^~~~[m[K
+[2.443s]                                                      [32m[Ktwist[m[K
+[3.853s] CMakeFiles/position_controller.dir/build.make:62: recipe for target 'CMakeFiles/position_controller.dir/src/position_controll.cpp.o' failed
+[3.853s] make[2]: *** [CMakeFiles/position_controller.dir/src/position_controll.cpp.o] Error 1
+[3.853s] CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/position_controller.dir/all' failed
+[3.853s] make[1]: *** [CMakeFiles/position_controller.dir/all] Error 2
+[3.853s] make[1]: *** Attesa per i processi non terminati....
+[4.605s] [ 75%] [32m[1mLinking CXX executable pianificatore[0m
+[5.004s] [ 75%] Built target pianificatore
+[5.006s] Makefile:140: recipe for target 'all' failed
+[5.006s] make: *** [all] Error 2
+[5.008s] Invoked command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller -- -j4 -l4

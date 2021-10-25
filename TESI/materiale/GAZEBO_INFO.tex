@@ -1,0 +1,130 @@
+URDF & XACRO FORMAT
+
+Unified Robot Description Format (URDF) è un formato XML per rappresentare un modello di un robot.
+Dalla versione Hydro in poi un numero di packages e componenti sono in formato URDF.
+Puoi così costruire il tuo robot di simulazione inserendo in parametri necessari.
+Per semplificare il lavoro interviene il package XACRO che  è composto da:
+1) costanti
+2)matemtica di base
+3) macro
+
+http://wiki.ros.org/urdf/Tutorials/Using%20Xacro%20to%20Clean%20Up%20a%20URDF%20File  ( PAGINA INIZIALE CON ESEMPI).
+
+COME USARE URDF DENTRO GAZEBO:
+
+1)roslaunch urdf_sim_tutorial gazebo.launch (esempio su ROS1)
+ 
+In seguito Gazebo aprirà un empty_world e prioetterà il robot senza i joint e altre informazioni utili.
+
+2)la seconda operazione è utlizzare Gazebo Plugin e permettere il collegamento tra Gazebo e ROS.
+
+3)we need to specify some bits of ROS code that we want to run within Gazebo, which we generically call controllers.We have a yaml file joints.yaml that specifies our first controller.
+4)per ogni joint non sistemato è necessario specificare una trasmissione che permette a Gazebo di dire con i joint.
+
+INFORMAZIONI IMPORTANTI URDF CON GAZEBO
+
+To deal with this issue, a new format called the Simulation Description Format (SDF) was created for use in Gazebo to solve the shortcomings of URDF. SDF is a complete description for everything from the world level down to the robot level. It is scalable, and makes it easy to add and modify elements. The SDF format is itself described using XML, which facilitates a simple upgrade tool to migrate old versions to new versions. It is also self-descriptive.
+
+Un elemento Link descrive un corpo rigio con 3 fondamentali parametri: Inertia, Visual feature e proprietà di collisione
+Descrizione elemento inertial:
+
+////////////////////////////
+<inertial> (optional)
+
+    The inertial properties of the link.
+
+    <origin> (optional: defaults to identity if not specified)
+
+        This is the pose of the inertial reference frame, relative to the link reference frame. The origin of the inertial reference frame needs to be at the center of gravity. The axes of the inertial reference frame do not need to be aligned with the principal axes of the inertia.
+
+        xyz (optional: defaults to zero vector)
+
+            Represents the $$x,y,z$$ offset. 
+
+        rpy (optional: defaults to identity if not specified)
+            Represents the fixed axis roll, pitch and yaw angles in radians. 
+
+    <mass>
+        The mass of the link is represented by the value attribute of this element 
+
+    <inertia>
+        The 3x3 rotational inertia matrix, represented in the inertia frame. Because the rotational inertia matrix is symmetric, only 6 above-diagonal elements of this matrix are specified here, using the attributes ixx, ixy, ixz, iyy, iyz, izz.  
+        
+////////////////////////////
+
+<visual> (optional)
+
+    The visual properties of the link. This element specifies the shape of the object (box, cylinder, etc.) for visualization purposes. Note: multiple instances of <visual> tags can exist for the same link. The union of the geometry they define forms the visual representation of the link.
+
+    name (optional)
+        Specifies a name for a part of a link's geometry. This is useful to be able to refer to specific bits of the geometry of a link. 
+
+    <origin> (optional: defaults to identity if not specified)
+        The reference frame of the visual element with respect to the reference frame of the link.
+
+        xyz (optional: defaults to zero vector)
+
+            Represents the $$x,y,z$$ offset. 
+
+        rpy (optional: defaults to identity if not specified)
+            Represents the fixed axis roll, pitch and yaw angles in radians. 
+
+    <geometry> (required)
+
+        The shape of the visual object. This can be one of the following:
+
+        <box>
+
+            size attribute contains the three side lengths of the box. The origin of the box is in its center. 
+
+        <cylinder>
+
+            Specify the radius and length. The origin of the cylinder is in its center. cylinder_coordinates.png 
+
+        <sphere>
+
+            Specify the radius. The origin of the sphere is in its center. 
+
+        <mesh>
+
+            A trimesh element specified by a filename, and an optional scale that scales the mesh's axis-aligned-bounding-box. The recommended format for best texture and color support is Collada .dae files, though .stl files are also supported. The mesh file is not transferred between machines referencing the same model. It must be a local file. 
+
+<material> (optional)
+
+    The material of the visual element. It is allowed to specify a material element outside of the 'link' object, in the top level 'robot' element. From within a link element you can then reference the material by name.
+
+    name name of the material
+
+    <color> (optional)
+
+        rgba The color of a material specified by set of four numbers representing red/green/blue/alpha, each in the range of [0,1]. 
+
+    <texture> (optional)
+
+        The texture of a material is specified by a filename     
+            
+////////////////////////////////////////
+
+
+
+
+<collision> (optional)
+
+    The collision properties of a link. Note that this can be different from the visual properties of a link, for example, simpler collision models are often used to reduce computation time. Note: multiple instances of <collision> tags can exist for the same link. The union of the geometry they define forms the collision representation of the link.
+
+    name (optional)
+        Specifies a name for a part of a link's geometry. This is useful to be able to refer to specific bits of the geometry of a link. 
+
+    <origin> (optional: defaults to identity if not specified)
+        The reference frame of the collision element, relative to the reference frame of the link.
+
+        xyz (optional: defaults to zero vector)
+
+            Represents the $$x,y,z$$ offset. 
+
+        rpy (optional: defaults to identity if not specified)
+            Represents the fixed axis roll, pitch and yaw angles in radians. 
+
+    <geometry>
+        See the geometry description in the above visual element. 
+        

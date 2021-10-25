@@ -1,0 +1,21 @@
+[0.046s] -- Found gazebo_ros_pkgs: 3.4.2 (/opt/ros/eloquent/share/gazebo_ros_pkgs/cmake)
+[0.046s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[0.073s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.277s] -- Found geometry_msgs: 0.8.1 (/opt/ros/eloquent/share/geometry_msgs/cmake)
+[0.287s] -- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[0.323s] -- Found nav_msgs: 0.8.1 (/opt/ros/eloquent/share/nav_msgs/cmake)
+[0.335s] -- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+[0.347s] -- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+[0.349s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.380s] -- Found tf2: 0.12.5 (/opt/ros/eloquent/share/tf2/cmake)
+[0.383s] -- Found sensor_msgs: 0.8.1 (/opt/ros/eloquent/share/sensor_msgs/cmake)
+[0.394s] -- Found turtlebot3: 2.0.1 (/home/enrico/turtlebot3_ws/install/turtlebot3/share/turtlebot3/cmake)
+[0.397s] -- Found rclcpp_action: 0.8.4 (/opt/ros/eloquent/share/rclcpp_action/cmake)
+[0.472s] -- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)
+[0.570s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") 
+[0.594s] -- Found FastRTPS: /opt/ros/eloquent/include  
+[0.680s] -- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+[0.815s] -- Configuring incomplete, errors occurred!
+[0.815s] See also "/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/CMakeFiles/CMakeOutput.log".
+[0.816s] See also "/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/CMakeFiles/CMakeError.log".
+[0.817s] Makefile:310: recipe for target 'cmake_check_build_system' failed

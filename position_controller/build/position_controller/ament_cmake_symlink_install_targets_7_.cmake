@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_generator_py/position_controller/position_controller_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so" "TARGETS" "position_controller__rosidl_typesupport_c__pyext" "DESTINATION" "lib/python3.6/site-packages/position_controller")

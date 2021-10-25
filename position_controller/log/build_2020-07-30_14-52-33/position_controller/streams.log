@@ -1,0 +1,51 @@
+[0.017s] Invoking command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller -- -j4 -l4
+[0.049s] -- Found gazebo_ros_pkgs: 3.4.4 (/opt/ros/eloquent/share/gazebo_ros_pkgs/cmake)
+[0.049s] -- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)
+[0.083s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[0.083s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.276s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.283s] -- Found geometry_msgs: 0.8.1 (/opt/ros/eloquent/share/geometry_msgs/cmake)
+[0.293s] -- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)
+[0.330s] -- Found nav_msgs: 0.8.1 (/opt/ros/eloquent/share/nav_msgs/cmake)
+[0.341s] -- Found position_controller_msgs: 0.0.0 (/home/enrico/turtlebot3_ws/install/position_controller_msgs/share/position_controller_msgs/cmake)
+[0.346s] -- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)
+[0.455s] -- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)
+[0.468s] -- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)
+[0.470s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.498s] -- Found tf2: 0.12.5 (/opt/ros/eloquent/share/tf2/cmake)
+[0.501s] -- Found sensor_msgs: 0.8.1 (/opt/ros/eloquent/share/sensor_msgs/cmake)
+[0.512s] -- Found turtlebot3: 2.1.0 (/home/enrico/turtlebot3_ws/install/turtlebot3/share/turtlebot3/cmake)
+[0.512s] -- Found rclcpp_components: 0.8.4 (/opt/ros/eloquent/share/rclcpp_components/cmake)
+[0.514s] -- Found poco_vendor:  (/opt/ros/eloquent/share/poco_vendor/cmake)
+[0.707s] -- Found ament_lint_auto: 0.8.1 (/opt/ros/eloquent/share/ament_lint_auto/cmake)
+[0.829s] -- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code
+[0.865s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.866s] -- Configured cppcheck include dirs: /home/enrico/turtlebot3_ws/src/position_controller/include
+[0.906s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.907s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.916s] -- Added test 'lint_cmake' to check CMake code style
+[0.920s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[0.953s] -- Added test 'uncrustify' to check C / C++ code style
+[0.958s] -- Added test 'xmllint' to check XML markup files
+[0.962s] -- Configuring done
+[0.999s] -- Generating done
+[1.001s] -- Build files have been written to: /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller
+[1.027s] [35m[1mScanning dependencies of target position_controllerr[0m
+[1.028s] [35m[1mScanning dependencies of target pianificatore[0m
+[1.061s] [ 25%] [32mBuilding CXX object CMakeFiles/pianificatore.dir/src/pianificatore.cpp.o[0m
+[1.075s] [ 50%] [32mBuilding CXX object CMakeFiles/position_controllerr.dir/src/position_controll.cpp.o[0m
+[1.183s] In file included from [01m[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:1:0[m[K:
+[1.183s] [01m[K/home/enrico/turtlebot3_ws/src/position_controller/include/position_controller/position_controll.hpp:12:10:[m[K [01;31m[Kfatal error: [m[Kposition_controller_msgs/msg/Position.hpp: File o directory non esistente
+[1.183s]  #include [01;31m[K"position_controller_msgs/msg/Position.hpp"[m[K
+[1.183s]           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.184s] compilation terminated.
+[1.191s] CMakeFiles/position_controllerr.dir/build.make:62: recipe for target 'CMakeFiles/position_controllerr.dir/src/position_controll.cpp.o' failed
+[1.191s] make[2]: *** [CMakeFiles/position_controllerr.dir/src/position_controll.cpp.o] Error 1
+[1.191s] make[1]: *** [CMakeFiles/position_controllerr.dir/all] Error 2
+[1.191s] make[1]: *** Attesa per i processi non terminati....
+[1.192s] CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/position_controllerr.dir/all' failed
+[4.211s] [ 75%] [32m[1mLinking CXX executable pianificatore[0m
+[4.455s] [ 75%] Built target pianificatore
+[4.456s] Makefile:140: recipe for target 'all' failed
+[4.456s] make: *** [all] Error 2
+[4.458s] Invoked command in '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent /usr/bin/cmake --build /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller -- -j4 -l4

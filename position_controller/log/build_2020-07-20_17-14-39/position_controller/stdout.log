@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target position_controller[0m
+[ 50%] Built target pianificatore
+[ 75%] [32mBuilding CXX object CMakeFiles/position_controller.dir/src/position_controll.cpp.o[0m
+CMakeFiles/position_controller.dir/build.make:62: recipe for target 'CMakeFiles/position_controller.dir/src/position_controll.cpp.o' failed
+CMakeFiles/Makefile2:99: recipe for target 'CMakeFiles/position_controller.dir/all' failed
+Makefile:140: recipe for target 'all' failed

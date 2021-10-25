@@ -1,0 +1,173 @@
+[0.000000] (-) TimerEvent: {}
+[0.000255] (position_controller) JobQueued: {'identifier': 'position_controller', 'dependencies': OrderedDict()}
+[0.000309] (position_controller) JobStarted: {'identifier': 'position_controller'}
+[0.013285] (position_controller) JobProgress: {'identifier': 'position_controller', 'progress': 'cmake'}
+[0.013652] (position_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/enrico/turtlebot3_ws/src/position_controller', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/enrico/turtlebot3_ws/src/position_controller/install/position_controller'], 'cwd': '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'enrico'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1615'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/enrico/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/enrico/turtlebot3_ws/install/position_controller_msgs/lib:/home/enrico/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/enrico'), ('OLDPWD', '/home/enrico/turtlebot3_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/home/enrico/turtlebot3_ws/install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'enrico'), ('GTK_IM_MODULE', 'ibus'), ('_', '/usr/bin/colcon'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('ROS_VERSION', '2'), ('GAZEBO_MODEL_PATH', 'turtlebot3_gazebo:/home/enrico/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models'), ('USERNAME', 'enrico'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/eloquent/bin:/home/enrico/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/enrico-Vostro-5568:@/tmp/.ICE-unix/1519,unix/enrico-Vostro-5568:/tmp/.ICE-unix/1519'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f4f2cbfc_229f_432c_9081_dc2cb53c9219'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('GNOME_TERMINAL_SERVICE', ':1.131'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/enrico/turtlebot3_ws/install/turtlebot3_simulations:/home/enrico/turtlebot3_ws/install/turtlebot3_gazebo:/home/enrico/turtlebot3_ws/install/turtlebot3:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_bringup:/home/enrico/turtlebot3_ws/install/turtlebot3_node:/home/enrico/turtlebot3_ws/install/turtlebot3_navigation2:/home/enrico/turtlebot3_ws/install/turtlebot3_fake_node:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/home/enrico/turtlebot3_ws/install/turtlebot3_msgs:/home/enrico/turtlebot3_ws/install/turtlebot3_description:/home/enrico/turtlebot3_ws/install/turtlebot3_cartographer:/home/enrico/turtlebot3_ws/install/position_controller:/home/enrico/turtlebot3_ws/install/position_controller_msgs:/home/enrico/turtlebot3_ws/install/hls_lfcd_lds_driver:/home/enrico/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/eloquent'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PYTHONPATH', '/home/enrico/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/enrico/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/enrico/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/home/enrico/turtlebot3_ws/install/position_controller_msgs/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/enrico/turtlebot3_ws/install/turtlebot3_simulations:/home/enrico/turtlebot3_ws/install/turtlebot3:/home/enrico/turtlebot3_ws/install/turtlebot3_bringup:/home/enrico/turtlebot3_ws/install/turtlebot3_node:/home/enrico/turtlebot3_ws/install/turtlebot3_navigation2:/home/enrico/turtlebot3_ws/install/turtlebot3_fake_node:/home/enrico/turtlebot3_ws/install/turtlebot3_msgs:/home/enrico/turtlebot3_ws/install/turtlebot3_description:/home/enrico/turtlebot3_ws/install/turtlebot3_cartographer:/home/enrico/turtlebot3_ws/install/position_controller:/home/enrico/turtlebot3_ws/install/position_controller_msgs:/home/enrico/turtlebot3_ws/install/hls_lfcd_lds_driver:/home/enrico/turtlebot3_ws/install/dynamixel_sdk:/home/enrico/turtlebot3_ws/install/turtlebot3_gazebo:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent')]), 'shell': False}
+[0.089632] (position_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.5.0\n'}
+[0.098263] (-) TimerEvent: {}
+[0.150165] (position_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.5.0\n'}
+[0.160453] (position_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.198370] (-) TimerEvent: {}
+[0.233725] (position_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.240437] (position_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.298503] (-) TimerEvent: {}
+[0.312303] (position_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.323423] (position_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.398676] (-) TimerEvent: {}
+[0.499097] (-) TimerEvent: {}
+[0.553334] (position_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.561514] (position_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.599233] (-) TimerEvent: {}
+[0.643200] (position_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.643908] (position_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.699353] (-) TimerEvent: {}
+[0.725474] (position_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.730433] (position_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.799518] (-) TimerEvent: {}
+[0.899857] (-) TimerEvent: {}
+[1.000204] (-) TimerEvent: {}
+[1.082071] (position_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.085392] (position_controller) StdoutLine: {'line': b'-- Found gazebo_ros_pkgs: 3.4.4 (/opt/ros/eloquent/share/gazebo_ros_pkgs/cmake)\n'}
+[1.096301] (position_controller) StdoutLine: {'line': b'-- Found ament_cmake: 0.8.2 (/opt/ros/eloquent/share/ament_cmake/cmake)\n'}
+[1.100313] (-) TimerEvent: {}
+[1.143520] (position_controller) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") \n'}
+[1.143909] (position_controller) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.200413] (-) TimerEvent: {}
+[1.300725] (-) TimerEvent: {}
+[1.333125] (position_controller) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.377386] (position_controller) StdoutLine: {'line': b'-- Found geometry_msgs: 0.8.1 (/opt/ros/eloquent/share/geometry_msgs/cmake)\n'}
+[1.400868] (-) TimerEvent: {}
+[1.408005] (position_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.8.2 (/opt/ros/eloquent/share/rosidl_adapter/cmake)\n'}
+[1.463166] (position_controller) StdoutLine: {'line': b'-- Found nav_msgs: 0.8.1 (/opt/ros/eloquent/share/nav_msgs/cmake)\n'}
+[1.476182] (position_controller) StdoutLine: {'line': b'-- Found rosidl_default_generators: 0.8.0 (/opt/ros/eloquent/share/rosidl_default_generators/cmake)\n'}
+[1.500978] (-) TimerEvent: {}
+[1.563546] (position_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") \n'}
+[1.587940] (position_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/eloquent/include  \n'}
+[1.601110] (-) TimerEvent: {}
+[1.667025] (position_controller) StdoutLine: {'line': b'-- Found rclcpp: 0.8.4 (/opt/ros/eloquent/share/rclcpp/cmake)\n'}
+[1.698659] (position_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.8.1 (/opt/ros/eloquent/share/rmw_implementation_cmake/cmake)\n'}
+[1.700692] (position_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.701201] (-) TimerEvent: {}
+[1.705768] (position_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.779956] (position_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.786392] (position_controller) StdoutLine: {'line': b'-- Looking for pthread_create\n'}
+[1.801384] (-) TimerEvent: {}
+[1.872172] (position_controller) StdoutLine: {'line': b'-- Looking for pthread_create - not found\n'}
+[1.872995] (position_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.901545] (-) TimerEvent: {}
+[1.955557] (position_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.955856] (position_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[2.001671] (-) TimerEvent: {}
+[2.027871] (position_controller) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.029069] (position_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.095714] (position_controller) StdoutLine: {'line': b'-- Found tf2: 0.12.5 (/opt/ros/eloquent/share/tf2/cmake)\n'}
+[2.101788] (-) TimerEvent: {}
+[2.103294] (position_controller) StdoutLine: {'line': b'-- Found sensor_msgs: 0.8.1 (/opt/ros/eloquent/share/sensor_msgs/cmake)\n'}
+[2.114327] (position_controller) StdoutLine: {'line': b'-- Found turtlebot3: 2.1.0 (/home/enrico/turtlebot3_ws/install/turtlebot3/share/turtlebot3/cmake)\n'}
+[2.117060] (position_controller) StdoutLine: {'line': b'-- Found rclcpp_components: 0.8.4 (/opt/ros/eloquent/share/rclcpp_components/cmake)\n'}
+[2.124009] (position_controller) StdoutLine: {'line': b'-- Found poco_vendor:  (/opt/ros/eloquent/share/poco_vendor/cmake)\n'}
+[2.179891] (position_controller) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") \n'}
+[2.201930] (-) TimerEvent: {}
+[2.302243] (-) TimerEvent: {}
+[2.317918] (position_controller) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_cppcheck/cmake)\n'}
+[2.321488] (position_controller) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_cpplint/cmake)\n'}
+[2.325330] (position_controller) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_uncrustify/cmake)\n'}
+[2.336529] (position_controller) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c\n'}
+[2.343990] (position_controller) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp\n'}
+[2.402362] (-) TimerEvent: {}
+[2.475082] (position_controller) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") \n'}
+[2.477889] (position_controller) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.0 (/opt/ros/eloquent/share/python_cmake_module/cmake)\n'}
+[2.502511] (-) TimerEvent: {}
+[2.514026] (position_controller) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.9", minimum required is "3.5") \n'}
+[2.514384] (position_controller) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.514530] (position_controller) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m\n'}
+[2.514615] (position_controller) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so\n'}
+[2.545963] (position_controller) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.602655] (-) TimerEvent: {}
+[2.681067] (position_controller) StdoutLine: {'line': b'-- Found ament_cmake_flake8: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_flake8/cmake)\n'}
+[2.684603] (position_controller) StdoutLine: {'line': b'-- Found ament_cmake_pep257: 0.8.1 (/opt/ros/eloquent/share/ament_cmake_pep257/cmake)\n'}
+[2.702827] (-) TimerEvent: {}
+[2.803147] (-) TimerEvent: {}
+[2.841149] (position_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.8.1 (/opt/ros/eloquent/share/ament_lint_auto/cmake)\n'}
+[2.874102] (position_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.876006] (position_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/enrico/turtlebot3_ws/src/position_controller/include;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_generator_c;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_typesupport_c;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_typesupport_fastrtps_c;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_generator_cpp;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_typesupport_fastrtps_cpp;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_typesupport_introspection_c;/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller/rosidl_generator_py\n'}
+[2.889572] (position_controller) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[2.902906] (position_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.903203] (-) TimerEvent: {}
+[2.905044] (position_controller) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.907156] (position_controller) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[2.923906] (position_controller) StdoutLine: {'line': b"-- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code\n"}
+[2.928024] (position_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.930663] (position_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.936720] (position_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.003350] (-) TimerEvent: {}
+[3.008933] (position_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[3.012915] (position_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/enrico/turtlebot3_ws/src/position_controller/build/position_controller\n'}
+[3.019272] (position_controller) CommandEnded: {'returncode': 0}
+[3.022529] (position_controller) JobProgress: {'identifier': 'position_controller', 'progress': 'build'}
+[3.022620] (position_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller', '--', '-j4', '-l4'], 'cwd': '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'enrico'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1615'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/enrico/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/enrico/turtlebot3_ws/install/position_controller_msgs/lib:/home/enrico/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib'), ('SHLVL', '1'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/enrico'), ('OLDPWD', '/home/enrico/turtlebot3_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/home/enrico/turtlebot3_ws/install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'eloquent'), ('LOGNAME', 'enrico'), ('GTK_IM_MODULE', 'ibus'), ('_', '/usr/bin/colcon'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('ROS_VERSION', '2'), ('GAZEBO_MODEL_PATH', 'turtlebot3_gazebo:/home/enrico/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models'), ('USERNAME', 'enrico'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/eloquent/bin:/home/enrico/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/enrico-Vostro-5568:@/tmp/.ICE-unix/1519,unix/enrico-Vostro-5568:/tmp/.ICE-unix/1519'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f4f2cbfc_229f_432c_9081_dc2cb53c9219'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('GNOME_TERMINAL_SERVICE', ':1.131'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/enrico/turtlebot3_ws/install/turtlebot3_simulations:/home/enrico/turtlebot3_ws/install/turtlebot3_gazebo:/home/enrico/turtlebot3_ws/install/turtlebot3:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_bringup:/home/enrico/turtlebot3_ws/install/turtlebot3_node:/home/enrico/turtlebot3_ws/install/turtlebot3_navigation2:/home/enrico/turtlebot3_ws/install/turtlebot3_fake_node:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/home/enrico/turtlebot3_ws/install/turtlebot3_msgs:/home/enrico/turtlebot3_ws/install/turtlebot3_description:/home/enrico/turtlebot3_ws/install/turtlebot3_cartographer:/home/enrico/turtlebot3_ws/install/position_controller:/home/enrico/turtlebot3_ws/install/position_controller_msgs:/home/enrico/turtlebot3_ws/install/hls_lfcd_lds_driver:/home/enrico/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/eloquent'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/enrico/turtlebot3_ws/src/position_controller/build/position_controller'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PYTHONPATH', '/home/enrico/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:/home/enrico/turtlebot3_ws/install/turtlebot3_example/lib/python3.6/site-packages:/home/enrico/turtlebot3_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:/home/enrico/turtlebot3_ws/install/position_controller_msgs/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/enrico/turtlebot3_ws/install/turtlebot3_simulations:/home/enrico/turtlebot3_ws/install/turtlebot3:/home/enrico/turtlebot3_ws/install/turtlebot3_bringup:/home/enrico/turtlebot3_ws/install/turtlebot3_node:/home/enrico/turtlebot3_ws/install/turtlebot3_navigation2:/home/enrico/turtlebot3_ws/install/turtlebot3_fake_node:/home/enrico/turtlebot3_ws/install/turtlebot3_msgs:/home/enrico/turtlebot3_ws/install/turtlebot3_description:/home/enrico/turtlebot3_ws/install/turtlebot3_cartographer:/home/enrico/turtlebot3_ws/install/position_controller:/home/enrico/turtlebot3_ws/install/position_controller_msgs:/home/enrico/turtlebot3_ws/install/hls_lfcd_lds_driver:/home/enrico/turtlebot3_ws/install/dynamixel_sdk:/home/enrico/turtlebot3_ws/install/turtlebot3_gazebo:/home/enrico/turtlebot3_ws/install/turtlebot3_teleop:/home/enrico/turtlebot3_ws/install/turtlebot3_example:/opt/ros/eloquent')]), 'shell': False}
+[3.074223] (position_controller) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.074566] (position_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pianificatore\x1b[0m\n'}
+[3.074767] (position_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target position_controller\x1b[0m\n'}
+[3.075093] (position_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target new_msg__cpp\x1b[0m\n'}
+[3.093524] (position_controller) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.103526] (-) TimerEvent: {}
+[3.144769] (position_controller) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/pianificatore.dir/src/pianificatore.cpp.o\x1b[0m\n'}
+[3.147788] (position_controller) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/position_controller.dir/src/position_controll.cpp.o\x1b[0m\n'}
+[3.203632] (-) TimerEvent: {}
+[3.300373] (position_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/enrico/turtlebot3_ws/src/position_controller/src/position_controll.cpp:1:0\x1b[m\x1b[K:\n'}
+[3.300735] (position_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/enrico/turtlebot3_ws/src/position_controller/include/position_controller/position_controll.hpp:12:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kposition_controller/msg/Positiondef.hpp: File o directory non esistente\n'}
+[3.300977] (position_controller) StderrLine: {'line': b' #include \x1b[01;31m\x1b[K<position_controller/msg/Positiondef.hpp>\x1b[m\x1b[K\n'}
+[3.301192] (position_controller) StderrLine: {'line': b'          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.301442] (position_controller) StderrLine: {'line': b'compilation terminated.\n'}
+[3.303742] (-) TimerEvent: {}
+[3.310351] (position_controller) StdoutLine: {'line': b"CMakeFiles/position_controller.dir/build.make:62: recipe for target 'CMakeFiles/position_controller.dir/src/position_controll.cpp.o' failed\n"}
+[3.310600] (position_controller) StderrLine: {'line': b'make[2]: *** [CMakeFiles/position_controller.dir/src/position_controll.cpp.o] Error 1\n'}
+[3.310754] (position_controller) StdoutLine: {'line': b"CMakeFiles/Makefile2:636: recipe for target 'CMakeFiles/position_controller.dir/all' failed\n"}
+[3.310888] (position_controller) StderrLine: {'line': b'make[1]: *** [CMakeFiles/position_controller.dir/all] Error 2\n'}
+[3.311018] (position_controller) StderrLine: {'line': b'make[1]: *** Attesa per i processi non terminati....\n'}
+[3.403838] (-) TimerEvent: {}
+[3.483254] (position_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target new_msg__rosidl_generator_c\x1b[0m\n'}
+[3.496406] (position_controller) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/new_msg__rosidl_generator_c.dir/rosidl_generator_c/position_controller/msg/positiondef__functions.c.o\x1b[0m\n'}
+[3.503945] (-) TimerEvent: {}
+[3.542035] (position_controller) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libnew_msg__rosidl_generator_c.so\x1b[0m\n'}
+[3.563190] (position_controller) StdoutLine: {'line': b'[ 18%] Built target new_msg__cpp\n'}
+[3.588967] (position_controller) StdoutLine: {'line': b'[ 18%] Built target new_msg__rosidl_generator_c\n'}
+[3.604071] (-) TimerEvent: {}
+[3.704414] (-) TimerEvent: {}
+[3.804743] (-) TimerEvent: {}
+[3.905054] (-) TimerEvent: {}
+[4.005367] (-) TimerEvent: {}
+[4.105704] (-) TimerEvent: {}
+[4.206061] (-) TimerEvent: {}
+[4.306423] (-) TimerEvent: {}
+[4.406746] (-) TimerEvent: {}
+[4.507153] (-) TimerEvent: {}
+[4.607507] (-) TimerEvent: {}
+[4.707828] (-) TimerEvent: {}
+[4.808201] (-) TimerEvent: {}
+[4.908554] (-) TimerEvent: {}
+[5.008910] (-) TimerEvent: {}
+[5.109416] (-) TimerEvent: {}
+[5.209816] (-) TimerEvent: {}
+[5.310161] (-) TimerEvent: {}
+[5.410527] (-) TimerEvent: {}
+[5.510881] (-) TimerEvent: {}
+[5.611267] (-) TimerEvent: {}
+[5.711640] (-) TimerEvent: {}
+[5.812004] (-) TimerEvent: {}
+[5.912327] (-) TimerEvent: {}
+[6.012649] (-) TimerEvent: {}
+[6.113003] (-) TimerEvent: {}
+[6.213333] (-) TimerEvent: {}
+[6.313683] (-) TimerEvent: {}
+[6.400748] (position_controller) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking CXX executable pianificatore\x1b[0m\n'}
+[6.413809] (-) TimerEvent: {}
+[6.514175] (-) TimerEvent: {}
+[6.614601] (-) TimerEvent: {}
+[6.637399] (position_controller) StdoutLine: {'line': b'[ 21%] Built target pianificatore\n'}
+[6.638449] (position_controller) StdoutLine: {'line': b"Makefile:140: recipe for target 'all' failed\n"}
+[6.638603] (position_controller) StderrLine: {'line': b'make: *** [all] Error 2\n'}
+[6.640163] (position_controller) CommandEnded: {'returncode': 2}
+[6.640720] (position_controller) JobEnded: {'identifier': 'position_controller', 'rc': 2}
+[6.651033] (-) EventReactorShutdown: {}
